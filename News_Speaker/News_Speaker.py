@@ -14,7 +14,7 @@ y = soup.find_all('span', class_ = 'cd__headline-text')
 #activation of the text speaker
 engine = pyttsx3.init()
 #introduction to the news
-engine.say('This is CNN and lets talk about what is happening around the world today.')
+engine.say('This is BBC and lets talk about what is happening around the world today.')
 #speaks every news headline
 
 
