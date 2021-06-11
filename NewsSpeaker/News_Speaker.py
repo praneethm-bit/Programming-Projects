@@ -14,7 +14,6 @@ y = soup.find_all('span', class_ = 'cd__headline-text')
 #activation of the text speaker
 engine = pyttsx3.init()
 #introduction to the news
-engine.say('This is CNN and lets talk about what is happening around the world today.')
 #speaks every news headline
 
 
@@ -26,5 +25,9 @@ a = soup2.find_all('h3', class_ = 'gs-c-promo-heading__title gel-pica-bold nw-o-
 
 engine2 = pyttsx3.init()
 
+engine2.say('This is BBC and lets talk about what is happening around the world today.')
+
 for b in a:
+    engine2.say(b.text)
+    engine2.runAndWait()
     print(b.text)
